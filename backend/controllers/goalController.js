@@ -16,6 +16,11 @@ const setGoals = asyncHandler(async (req, res) => {
   if (!req.body.text) {
     res.status(400).json({ message: 'Please add a text field' })
   }
+  const goal = await Goal.create({
+    text: req.body.text,
+  })
+
+  res.status(200).json(goal)
 })
 //@desc Update goals
 //@route PUT /api/goals
