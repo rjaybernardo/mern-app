@@ -9,7 +9,7 @@ const getGoals = (req, res) => {
 // access Private
 const setGoals = (req, res) => {
   if (!req.body.text) {
-    req.status(400).json({ message: 'Please add a text field' })
+    res.status(400).json({ message: 'Please add a text field' })
   }
 }
 //@desc Update goals
