@@ -1,1 +1,1 @@
-Goal setting app - MERN APP
+# Goal setting app - MERN APP
